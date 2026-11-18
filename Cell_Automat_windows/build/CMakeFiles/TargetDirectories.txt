@@ -1,0 +1,5 @@
+C:/Users/CHRCTR/Desktop/CellAutomat/build/CMakeFiles/CellularAutomaton.dir
+C:/Users/CHRCTR/Desktop/CellAutomat/build/CMakeFiles/edit_cache.dir
+C:/Users/CHRCTR/Desktop/CellAutomat/build/CMakeFiles/rebuild_cache.dir
+C:/Users/CHRCTR/Desktop/CellAutomat/build/CMakeFiles/CellularAutomaton_autogen_timestamp_deps.dir
+C:/Users/CHRCTR/Desktop/CellAutomat/build/CMakeFiles/CellularAutomaton_autogen.dir

@@ -1,0 +1,5 @@
+set(__QT_DEPLOY_TARGETS "CellularAutomaton;unit_tests")
+set(__QT_DEPLOY_TARGET_CellularAutomaton_FILE /home/chrctr/CellAutomat/build/CellularAutomaton)
+set(__QT_DEPLOY_TARGET_CellularAutomaton_TYPE EXECUTABLE)
+set(__QT_DEPLOY_TARGET_unit_tests_FILE /home/chrctr/CellAutomat/build/unit_tests)
+set(__QT_DEPLOY_TARGET_unit_tests_TYPE EXECUTABLE)

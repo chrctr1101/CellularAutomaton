@@ -1,0 +1,3 @@
+"C:\Program Files\CMake\bin\cmake.exe" -E rm -f CMakeFiles\CellularAutomaton.dir/objects.a
+C:\Qt\Tools\mingw1310_64\bin\ar.exe qc CMakeFiles\CellularAutomaton.dir/objects.a @CMakeFiles\CellularAutomaton.dir\objects1.rsp
+C:\Qt\Tools\mingw1310_64\bin\c++.exe -mwindows -Wl,--whole-archive CMakeFiles\CellularAutomaton.dir/objects.a -Wl,--no-whole-archive -o CellularAutomaton.exe -Wl,--out-implib,libCellularAutomaton.dll.a -Wl,--major-image-version,0,--minor-image-version,0 @CMakeFiles\CellularAutomaton.dir\linkLibs.rsp
