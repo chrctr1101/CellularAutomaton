@@ -18,7 +18,7 @@ class MyVector {
 public:
     MyVector() : data(nullptr), sz(0), cap(0) {}
     
-    // Глубокое копирование
+    // Конструктор копирования
     MyVector(const MyVector& other) : data(nullptr), sz(0), cap(0) {
         if (other.sz > 0) {
             data = new T[other.sz];
@@ -28,6 +28,7 @@ public:
         }
     }
     
+    // Оператор присваивания
     MyVector& operator=(const MyVector& other) {
         if (this == &other) return *this;
         delete[] data;

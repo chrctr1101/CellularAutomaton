@@ -58,7 +58,8 @@ GameWindow::GameWindow(int w, int h, int type, unsigned int birth, unsigned int 
       btnStart(nullptr), speedSpin(nullptr), gridWidget(nullptr), histCount(0) {
     
     setWindowTitle("NEON AUTOMATA");
-    resize(W * 15 + 300, H * 15 + 200);
+    //resize(W * 15 + 300, H * 15 + 200);
+    showFullScreen();
     setStyleSheet(
         "QWidget { background-color: #0a0a12; color: #00ffcc; font-family: 'Consolas', 'Courier New', monospace; font-size: 14px; }"
     );

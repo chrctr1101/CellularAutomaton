@@ -1,9 +1,5 @@
-/home/chrctr/CellAutomat/build/CMakeFiles/CellularAutomaton.dir
-/home/chrctr/CellAutomat/build/CMakeFiles/unit_tests.dir
-/home/chrctr/CellAutomat/build/CMakeFiles/test.dir
-/home/chrctr/CellAutomat/build/CMakeFiles/edit_cache.dir
-/home/chrctr/CellAutomat/build/CMakeFiles/rebuild_cache.dir
-/home/chrctr/CellAutomat/build/CMakeFiles/CellularAutomaton_autogen_timestamp_deps.dir
-/home/chrctr/CellAutomat/build/CMakeFiles/CellularAutomaton_autogen.dir
-/home/chrctr/CellAutomat/build/CMakeFiles/unit_tests_autogen_timestamp_deps.dir
-/home/chrctr/CellAutomat/build/CMakeFiles/unit_tests_autogen.dir
+C:/Users/CHRCTR/Desktop/CellAutomat/build/CMakeFiles/CellularAutomaton.dir
+C:/Users/CHRCTR/Desktop/CellAutomat/build/CMakeFiles/edit_cache.dir
+C:/Users/CHRCTR/Desktop/CellAutomat/build/CMakeFiles/rebuild_cache.dir
+C:/Users/CHRCTR/Desktop/CellAutomat/build/CMakeFiles/CellularAutomaton_autogen_timestamp_deps.dir
+C:/Users/CHRCTR/Desktop/CellAutomat/build/CMakeFiles/CellularAutomaton_autogen.dir

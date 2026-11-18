@@ -14,6 +14,7 @@ public:
 private slots:
     void startGame();
     void onTypeChanged(int index);
+    void exitApp(); // <--- Новый слот
 
 private:
     QSpinBox *spinW;

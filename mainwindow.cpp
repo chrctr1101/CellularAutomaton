@@ -4,11 +4,12 @@
 #include <QHBoxLayout>
 #include <QLabel>
 #include <QToolTip>
+#include <QApplication> // Для qApp->quit()
 
 MainWindow::MainWindow(QWidget *parent) 
     : QWidget(parent), customBirth(1u << 3), customSurvive((1u << 2) | (1u << 3)) {
     setWindowTitle("NEON AUTOMATA");
-    resize(450, 450);
+    resize(450, 500); // Чуть увеличили высоту под новую кнопку
     setStyleSheet(
         "QWidget { background-color: #0a0a12; color: #00ffcc; font-family: 'Consolas', 'Courier New', monospace; font-size: 14px; }"
     );
@@ -142,14 +143,24 @@ MainWindow::MainWindow(QWidget *parent)
     }
     layout->addWidget(customWidget);
 
+    // ==================== BUTTONS ====================
     // Start button
-    auto btn = new QPushButton("START SIMULATION");
-    btn->setStyleSheet(
+    auto btnStart = new QPushButton("START SIMULATION");
+    btnStart->setStyleSheet(
         "QPushButton { background-color: #1a1a2e; border: 2px solid #00ff00; border-radius: 8px; padding: 14px; font-size: 16px; font-weight: bold; color: #00ffcc; }"
         "QPushButton:hover { background-color: #00ff00; color: #0a0a12; }"
     );
-    connect(btn, &QPushButton::clicked, this, &MainWindow::startGame);
-    layout->addWidget(btn);
+    connect(btnStart, &QPushButton::clicked, this, &MainWindow::startGame);
+    layout->addWidget(btnStart);
+
+    // Exit button
+    auto btnExit = new QPushButton("EXIT");
+    btnExit->setStyleSheet(
+        "QPushButton { background-color: #1a1a2e; border: 2px solid #ff3333; border-radius: 8px; padding: 10px; font-size: 16px; font-weight: bold; color: #00ffcc; }"
+        "QPushButton:hover { background-color: #ff3333; color: #0a0a12; }"
+    );
+    connect(btnExit, &QPushButton::clicked, this, &MainWindow::exitApp);
+    layout->addWidget(btnExit);
 
     connect(comboType, QOverload<int>::of(&QComboBox::currentIndexChanged),
             this, &MainWindow::onTypeChanged);
@@ -186,6 +197,10 @@ void MainWindow::startGame() {
 
     GameWindow *game = new GameWindow(w, h, type, customBirth, customSurvive);
     game->setAttribute(Qt::WA_DeleteOnClose);
-    game->show();
+    game->showFullScreen();
     this->hide();
+}
+
+void MainWindow::exitApp() {
+    qApp->quit(); // Завершает приложение
 }
